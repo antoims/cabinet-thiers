@@ -3,90 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabinet Thiers | Psychologie & Thérapies</title>
+    <title>Cabinet Thiers | Psychologie & Soin</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS de secours si le fichier externe n'est pas trouvé */
+        :root {
+            --bg: #FDFBFA;
+            --rose: #F7EFED;
+            --brown: #6D5D55;
+            --dark: #2D2926;
+        }
+        body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(--dark); margin:0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+        
+        /* Navigation Style Vendôme */
+        header { background: #fff; border-bottom: 1px solid #eee; padding: 30px 0; position: sticky; top:0; z-index:10; }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Cormorant Garamond', serif; letter-spacing: 4px; font-size: 1.5rem; text-decoration:none; color: var(--dark); }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a { text-decoration: none; color: var(--dark); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Hero Section asymétrique */
+        .hero { padding: 80px 0; display: flex; align-items: center; gap: 50px; background: #fff; }
+        .hero-content { flex: 1; text-align: left; } /* Forcer l'alignement à gauche */
+        .hero-image { flex: 1.2; }
+        .hero-image img { width: 100%; height: 500px; object-fit: cover; border-radius: 2px; }
+        
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: var(--brown); margin-bottom: 20px; line-height: 1; }
+        
+        /* Galerie Mosaic */
+        .gallery { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; padding: 100px 0; }
+        .gallery img { width: 100%; height: 350px; object-fit: cover; }
+        .img-large { height: 720px !important; grid-row: span 2; }
+
+        footer { background: var(--rose); padding: 60px 0; border-top: 1px solid #e8e2de; }
+        .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    </style>
 </head>
 <body>
 
-    <header class="navbar">
+    <header>
         <div class="container nav-flex">
-            <div class="logo">
-                <a href="index.html">CABINET THIERS</a>
-            </div>
+            <a href="#" class="logo">CABINET THIERS</a>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
+                <ul>
                     <li><a href="#">Psychologues</a></li>
                     <li><a href="#">Orthophoniste</a></li>
                     <li><a href="#">Thérapeutes</a></li>
-                    <li><a href="#" class="contact-btn">Contact</a></li>
+                    <li><a href="#" style="border: 1px solid #2d2926; padding: 8px 15px;">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <span class="upper-title">Espace Thérapeutique</span>
-                <h1>Soin, Écoute & Bienveillance</h1>
-                <p>Le Cabinet Thiers est un lieu de consultation pluridisciplinaire alliant professionnalisme et sérénité pour vous accompagner à chaque étape de votre vie.</p>
-                <a href="#decouvrir" class="btn-line">Découvrir le lieu</a>
-            </div>
-            <div class="hero-image">
-                <img src="assets/img/bureau2.jpg" alt="Cabinet Thiers - Bureau principal">
-            </div>
+    <section class="hero container">
+        <div class="hero-content">
+            <span style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; color: #6d5d55;">Espace Santé Thiers</span>
+            <h1>Soin & Équilibre</h1>
+            <p>Un environnement serein dédié à votre cheminement personnel, inspiré par la clarté et la douceur.</p>
+        </div>
+        <div class="hero-image">
+            <img src="assets/img/bureau2.jpg" alt="Bureau" onerror="this.src='https://via.placeholder.com/800x600?text=Bureau+2'">
         </div>
     </section>
 
-    <section id="decouvrir" class="gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Le Cabinet</h2>
-                <div class="separator"></div>
-            </div>
-            
-            <div class="mosaic-grid">
-                <div class="mosaic-item large">
-                    <img src="assets/img/salledattente.jpg" alt="Notre salle d'attente">
-                    <div class="caption">L'accueil</div>
-                </div>
-                <div class="mosaic-item">
-                    <img src="assets/img/bureau3.jpg" alt="Espace de consultation">
-                    <div class="caption">Confidentialité</div>
-                </div>
-                <div class="mosaic-item">
-                    <img src="assets/img/bureau4.jpg" alt="Détails du cabinet">
-                    <div class="caption">Sérénité</div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container gallery">
+        <img src="assets/img/salledattente.jpg" class="img-large" alt="Salle d'attente" onerror="this.src='https://via.placeholder.com/600x800?text=Salle+d+Attente'">
+        <img src="assets/img/bureau3.jpg" alt="Bureau 3" onerror="this.src='https://via.placeholder.com/400x350?text=Bureau+3'">
+        <img src="assets/img/bureau4.jpg" alt="Bureau 4" onerror="this.src='https://via.placeholder.com/400x350?text=Bureau+4'">
+    </div>
 
-    <footer class="footer">
+    <footer>
         <div class="container footer-grid">
-            <div class="footer-brand">
-                <h3>Cabinet Thiers</h3>
-                <p>Un environnement de soin d'exception.</p>
+            <div>
+                <h3 style="font-family: 'Cormorant Garamond';">CABINET THIERS</h3>
+                <p style="font-size: 0.8rem; margin-top: 10px;">12 Rue Thiers, 75000 Paris</p>
             </div>
-            <div class="footer-links">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="#">Psychologues</a></li>
-                    <li><a href="#">Orthophoniste</a></li>
-                    <li><a href="#">Thérapeutes</a></li>
+            <div>
+                <h4 style="font-size: 0.9rem; text-transform: uppercase;">Praticiens</h4>
+                <ul style="list-style: none; padding: 0; font-size: 0.8rem; line-height: 2;">
+                    <li>Psychologues</li>
+                    <li>Orthophoniste</li>
+                    <li>Thérapeutes</li>
                 </ul>
             </div>
-            <div class="footer-contact">
-                <h4>Contact</h4>
-                <p>12 Rue Thiers, 75000 Paris</p>
-                <p>01 23 45 67 89</p>
-                <p>contact@cabinet-thiers.fr</p>
+            <div>
+                <h4 style="font-size: 0.9rem; text-transform: uppercase;">Contact</h4>
+                <p style="font-size: 0.8rem;">01 23 45 67 89<br>contact@cabinet-thiers.fr</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Cabinet Thiers — Mentions Légales</p>
         </div>
     </footer>
 
