@@ -2,7 +2,8 @@
 :root {
     --primary: #6D5D55;    /* Taupe élégant */
     --accent: #E8D5D0;     /* Rose poudré */
-    --bg: #00000;         /* Beige chaud */
+    --bg: #F54927
+;         /* Beige chaud */
     --white: #ffffff;
     --text: #2D2926;
     --shadow: 0 20px 40px rgba(0,0,0,0.04);
