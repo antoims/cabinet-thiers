@@ -1,0 +1,82 @@
+/* Section Equipe Inspirée du Centre Vendôme */
+.team {
+    padding: 100px 20px;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-intro h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--marron-doux);
+    margin-bottom: 15px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.team-card {
+    background: var(--blanc);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Ombre très légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.card-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px 20px;
+}
+
+.card-content h3 {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: var(--noir-soft);
+}
+
+.specialty {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #C19A9A; /* Rose plus soutenu pour accentuer le titre */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: var(--marron-doux);
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s;
+}
+
+.read-more:hover {
+    border-bottom: 1px solid var(--marron-doux);
+}
