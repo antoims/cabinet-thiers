@@ -1,0 +1,127 @@
+/* --- Variables & Reset --- */
+:root {
+    --beige-light: #fdf8f5;
+    --beige-medium: #f5ebe0;
+    --rose-pale: #fcebe9;
+    --text-dark: #333333;
+    --text-brown: #634e42;
+    --accent: #d4a373;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-brown);
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: var(--beige-light);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--beige-medium);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav ul li {
+    margin-left: 30px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--text-brown);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover, .main-nav ul li a.active {
+    color: var(--accent);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: var(--beige-light);
+    padding: 60px 0;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-brown);
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--rose-pale);
+    color: var(--text-brown);
+    text-decoration: none;
+    border: 1px solid var(--accent);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* --- Gallery Section --- */
+.presentation {
+    padding:
