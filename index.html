@@ -3,89 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabinet Thiers | Espace de Santé Pluridisciplinaire</title>
-    <link rel="stylesheet" href="./assets/css/style.css?v=999">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
-    
+    <title>Cabinet Thiers | Accueil</title>
+    <link rel="stylesheet" href="./assets/css/style.css?v=final_version">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="index.html">CABINET THIERS</a>
-            </div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="psychologues.html">Psychologues</a></li>
-                        <li><a href="#">Orthophoniste</a></li>
-                        <li><a href="#">Thérapeutes</a></li>
-                        <li><a href="#" class="btn-cta">Prendre Rendez-vous</a></li>
-                    </ul>
-                </nav>
+    <header class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="brand">CABINET<span>THIERS</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="psychologues.html">Psychologues</a></li>
+                    <li><a href="#">Orthophoniste</a></li>
+                    <li><a href="#">Thérapeutes</a></li>
+                    <li><a href="#" class="btn-cta">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="container grid-hero">
-                <div class="hero-text">
-                    <span class="eyebrow">Bienvenue au cabinet</span>
-                    <h1>Un espace de soin au cœur de la ville</h1>
-                    <p>Le Cabinet Thiers est un lieu pluridisciplinaire pensé pour offrir sérénité et écoute. Nos praticiens vous reçoivent dans un cadre lumineux, conçu pour le cheminement de chacun.</p>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>Sérénité & Équilibre</h1>
+                    <p>Le Cabinet Thiers est un espace pluridisciplinaire au cadre lumineux et apaisant, conçu pour vous accompagner dans votre démarche de soin au cœur de Paris.</p>
+                    <a href="psychologues.html" style="text-decoration:none; color:var(--accent); font-weight:600; text-transform:uppercase; font-size:0.8rem; letter-spacing:1px;">Découvrir l'équipe →</a>
                 </div>
-                <div class="hero-img-box">
-                    <img src="assets/img/bureau2.jpg" alt="Cabinet Thiers - Bureau principal" class="reveal-img">
+                <div class="hero-img">
+                    <img src="assets/img/bureau2.jpg" alt="Cabinet Thiers">
                 </div>
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="team-section" style="background: var(--white);">
             <div class="container">
-                <div class="gallery-intro">
-                    <h2>Le Cabinet</h2>
-                    <div class="divider"></div>
+                <div class="team-header">
+                    <h1>Le Cabinet</h1>
                 </div>
-                
-                <div class="gallery-grid">
-                    <div class="gallery-item large">
-                        <img src="assets/img/salledattente.jpg" alt="Notre salle d'attente">
+                <div class="team-grid">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="assets/img/salledattente.jpg" alt="Salle d'attente">
+                        </div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/bureau3.jpg" alt="Espace de consultation">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/bureau4.jpg" alt="Ambiance apaisante">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="assets/img/bureau3.jpg" alt="Bureau de consultation">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="footer">
         <div class="container footer-grid">
-            <div class="footer-brand">
-                <span class="footer-logo">CABINET THIERS</span>
-                <p>Espace de santé pluridisciplinaire dédié au bien-être et à l'équilibre.</p>
+            <div>
+                <span class="brand">CABINET<span>THIERS</span></span>
+                <p style="margin-top:20px;">12 Rue Thiers, 75000 Paris</p>
             </div>
-            <div class="footer-menu">
-                <h3>Navigation</h3>
+            <div>
+                <h4>Navigation</h4>
                 <ul>
-                    <li><a href="#">Psychologues</a></li>
-                    <li><a href="#">Orthophoniste</a></li>
-                    <li><a href="#">Thérapeutes</a></li>
+                    <li><a href="psychologues.html" style="text-decoration:none; color:inherit;">Psychologues</a></li>
+                    <li>Orthophoniste</li>
+                    <li>Thérapeutes</li>
                 </ul>
             </div>
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <p>12 Rue Thiers, 75000 Paris</p>
+            <div>
+                <h4>Contact</h4>
                 <p>01 23 45 67 89</p>
                 <p>contact@cabinet-thiers.fr</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Cabinet Thiers. Design inspiré & épuré.</p>
         </div>
     </footer>
 
