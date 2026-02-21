@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabinet Thiers | Psychologie & Soins</title>
+    <title>Cabinet Thiers | Psychologie et Bien-être</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +12,10 @@
     <header class="main-header">
         <div class="container">
             <div class="logo">
-                <img src="assets/img/logo-placeholder.png" alt="Cabinet Thiers Logo" onerror="this.src='https://via.placeholder.com/150x50?text=Cabinet+Thiers'">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Cabinet Thiers" class="logo-img">
+                    <span>Cabinet Thiers</span>
+                </a>
             </div>
             <nav class="nav-menu">
                 <ul>
@@ -29,39 +30,44 @@
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>Cabinet Thiers</h1>
-            <p>Un espace de parole et d'écoute au cœur de la ville. Nous vous accueillons dans un cadre apaisant pour un accompagnement thérapeutique pluridisciplinaire et bienveillant.</p>
-            <a href="#contact" class="btn">Prendre rendez-vous</a>
-        </div>
-        <div class="hero-image">
-            <img src="assets/img/hero-office.jpg" alt="Bureaux Cabinet Thiers" onerror="this.src='https://via.placeholder.com/800x500?text=Ambiance+Cabinet'">
-        </div>
-    </section>
-
-    <section class="gallery container">
-        <h2>Le Cabinet</h2>
-        <div class="grid">
-            <div class="grid-item">
-                <img src="assets/img/room1.jpg" alt="Bureau de consultation" onerror="this.src='https://via.placeholder.com/400x300?text=Espace+de+soin'">
-            </div>
-            <div class="grid-item">
-                <img src="assets/img/room2.jpg" alt="Salle d'attente" onerror="this.src='https://via.placeholder.com/400x300?text=Salle+d\'attente'">
-            </div>
-            <div class="grid-item">
-                <img src="assets/img/room3.jpg" alt="Détails cabinet" onerror="this.src='https://via.placeholder.com/400x300?text=Atmosphère'">
+        <div class="hero-image" style="background-image: url('assets/img/salledattente.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Un espace d'écoute et de sérénité</h1>
+                <p>Le Cabinet Thiers vous accueille dans un cadre apaisant. Notre équipe pluridisciplinaire vous accompagne avec bienveillance dans votre cheminement personnel.</p>
+                <a href="#contact" class="btn">Prendre rendez-vous</a>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Le Cabinet</h2>
+                <p>Découvrez nos espaces de consultation clairs et apaisants.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/img/bureau2.jpg" alt="Espace de consultation - Bureau 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/bureau3.jpg" alt="Espace de consultation - Bureau 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/bureau4.jpg" alt="Espace de consultation - Bureau 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-info">
-                <img src="assets/img/logo-small.png" alt="Cabinet Thiers" class="footer-logo" onerror="this.src='https://via.placeholder.com/100x40?text=Logo'">
-                <p><strong>Cabinet Thiers</strong><br>
-                123 Rue de Thiers, 75000 Ville<br>
-                01 23 45 67 89<br>
-                contact@cabinet-thiers.fr</p>
+                <img src="assets/img/logo.png" alt="Logo Cabinet Thiers" class="footer-logo">
+                <h3>Cabinet Thiers</h3>
+                <p>12 Rue Thiers, 75000 Paris</p>
+                <p>Tél : 01 23 45 67 89</p>
+                <p>Email : contact@cabinet-thiers.fr</p>
             </div>
             <div class="footer-nav">
                 <h4>Navigation</h4>
@@ -70,11 +76,17 @@
                     <li><a href="#">Psychologues</a></li>
                     <li><a href="#">Orthophoniste</a></li>
                     <li><a href="#">Thérapeutes</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
+            </div>
+            <div class="footer-hours">
+                <h4>Horaires</h4>
+                <p>Lundi - Vendredi : 08h00 - 20h00</p>
+                <p>Samedi : 09h00 - 13h00</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Cabinet Thiers. Tous droits réservés.</p>
+            <p>&copy; 2026 Cabinet Thiers. Tous droits réservés.</p>
         </div>
     </footer>
 
